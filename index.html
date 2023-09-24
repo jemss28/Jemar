@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jemar_profile</title>
+</head>
+<body>
+
+
+<div class="container">
+
+<div class="div1"><h3 class="info">My info</h3>
+<br><br>
+<p class="work">Work experience:</p>
+<ul class="work_list">
+	<li>Refeller at blue waves</li>
+	<li>Service crew</li>
+	<li>Foodman industry</li>
+</ul>
+</div>
+<div class="div2">
+	
+	<img class="imgs" src="jemar.jpg" width="200px" height="200px">
+</div>
+<div class="div3">
+	
+	<ul class="info_list">
+<li>Name: Jemar E. Rodriguez</li>
+<li>Address: Brgy Oringao, Kabankalan City</li>
+<li>Age: 28</li>
+<li>Sex: male</li>
+<li>hight: 172cm</li>
+<li>Weight: 56kg</li>
+<li>Civil Status: Single but available</li>
+</ul>
+</div>
+
+</div>
+<style type="text/css">
+	.info_list{
+		font-family: sans-serif;
+transform: translate(1%,70%);
+letter-spacing: 2px;
+font-size: 15px;
+	}
+	.container{
+		width: 200fr;
+   
+		box-sizing: border-box;
+		display: grid;
+		grid-template-columns: 100fr  100fr  100fr  ;
+		grid-template-rows: 100fr  100fr  100fr  ;
+		
+		background-color: white;
+	}
+	.imgs{
+border-radius: 100px;
+	}
+.work_list{
+transform: translate(-6%,-100%);
+
+}
+.work{
+	transform: translate(2%,-250%);
+
+}
+.info{
+	transform: translate(10%,890%);
+}
+
+
+
+	.div1{
+		justify-content: center;
+		background-color: blue;
+		color: white;
+		width: 500px;
+		height: 600px;
+		grid-column: 2/3;
+		grid-row: -4/5;
+		background: linear-gradient(to right,black,Dimgray);
+border-radius: 20px;
+box-shadow: rgb(0, 0, 0, 32.20%) 3px 3px 3px;
+
+	}
+	.div2{
+		background: linear-gradient(to right,black,Dimgray);
+		position: absolute;
+		border-radius: 20px;
+		width: 200px;
+		height:200px;
+		transform: translate(305%,3%);
+		grid-row: -2/4;
+         border: solid 1px white;
+	}
+	.div3{
+		background: linear-gradient(to right,Dimgray,Dimgray);
+		color: white;
+		width: 400px;
+		height: 300px;
+		grid-column: 2/3;
+		grid-row: -3/4;
+	}
+	
+
+	@media(max-width: 600px){
+		.div2{
+transform: translate(10%,1%);
+		}
+		.work_list{
+transform: translate(50%,-100%);
+
+}
+.work{
+	transform: translate(56%,-250%);
+
+}
+	}
+</style>
+
+</body>
+</html>
